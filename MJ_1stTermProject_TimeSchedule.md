@@ -2,7 +2,9 @@
 # 1st Term Project - Project Plan
 
  ***Maria Jende, 14.01.2026***  
+ </br>
 
+ Link to PDF of 1st Term Project Presentation on the 07/01/2026: https://github.com/MariaJende/LinkedFiles/blob/main/250106_MJ_1stTP_Presentation.pdf  
 </br>
 
 ## Personal Motivation
