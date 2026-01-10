@@ -75,7 +75,7 @@ User interaction is handled through standard web input methods such as scrolling
 flowchart TD
     A[Project is developed using personal equipmentand VS Code for JavaScript, Eventually Ableton and Vital for sound generation] --> B[Upload files to the hosting server like Netlify or GitHub Pages, which stores Index html, javascript files, assets etc.]
     B --> C[User opens website] --> D[Files downloaded from hosting server to user's browser] --> E[Website 3d scene runs locally on user's device] 
-    style fill:#c2c2c2,stroke-width:0px,color:#fff
+    style fill:#c2c2c2,stroke:transparent,color:#ffffff
 ```
 </br>
 
