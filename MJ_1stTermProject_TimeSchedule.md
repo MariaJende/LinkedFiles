@@ -31,9 +31,12 @@ For my first-term project, I aim to strengthen my creative coding skills and dee
 
 The experience will guide the user along a rollercoaster-like pathway that can be controlled interactively: the user will be able to move forward, pause, or travel backward along the path. Throughout this journey, different particle simulations will appear, evolve, and eventually dissolve. The overarching goal of the website is to create an interactive and visually playful experience.
 
-I will begin by focusing on the core technical functionality rather than visual refinement. This includes implementing the scrollable pathway and establishing a stable system for particle evolution. Once the project reaches a technically stable state, I will expand upon it by introducing more complex particle behaviors and refining their motion to create more engaging dynamics as well as working on visual aesthetics.
+I will begin by focusing on the core technical functionality rather than visual refinement. This includes implementing the scrollable pathway and establishing a stable system for particle evolution. Once the project reaches a technically stable state, I will expand upon it by introducing more complex particle behaviors and refining their motion to create more engaging dynamics as well as working on visual aesthetics.Performance-wise, the system will be limited to a relatively small number of particles (likely fewer than 50k).
 
-Eventually, I would like the particles to form simple shapes that could support a small narrative/topic, which is yet to be defined. Additionally, to further enhance user engagement, I aim to incorporate particle interactions that respond to mouse hovering. These features, however, are considered optional extensions and are not part of the project’s minimum viable outcome.
+A major open question is how particle motion can appear (pseudo-)random while still behaving in a fully deterministic way when the user moves backward along the path. One possible solution is to use a noise texture or noise video to drive particle positions to preserve a random appearance while remaining reproducible.  
+Eventually, I would like the particles to form simple shapes that support a small narrative/topic, which is still to be defined. Another approach, therefore, would be that when the user moves backward, the same shapes appear and dissolve at the same points along the path, while the specific way in which particles come together to form these shapes and later dissolve remains slightly different each time. This would allow for a coherent structure while still enabling an individual, non-repetitive experience.
+
+Additionally, to further enhance user engagement, I aim to incorporate particle interactions that respond to mouse hovering. These features, however, are considered optional extensions and are not part of the project’s minimum viable outcome.
 
 Visually I want it to be bright and colourful without coming off too strong, so looking more at natural as well as muted and pastel colors.
 
@@ -67,9 +70,10 @@ Narrative development and hardware or pipeline development do not currently play
 
 This technical workflow is subject to change or can include mistakes since I’m still unfamiliar with the specific workflow necessary to achieve this.
 
-The core technical component is three.js, which is used to render the 3D environment, manage the camera, and display the particle systems. JavaScript serves as the main programming language, connecting user input to visual behavior. I will use VS Code as code editor.
+The core technical component is the usage of the three.js library. JavaScript serves as the main programming language, connecting user input to visual behavior. I will use VS Code as code editor.
 
-The project is developed as a web-based application. The website is hosted as static files on a server, but is executed locally in the user’s browser using JavaScript and WebGL.
+The project is developed as a web-based application. The website is hosted as static files on a server, but is executed locally in the user’s browser using JavaScript and three.js as well as html. I will not include GLSL-Shader.  
+
 All components (rendering, interaction, particle simulation, audio etc.) are integrated within a single browser-based system, allowing them to influence one another in real time.  
 User interaction is handled through standard web input methods such as scrolling, mouse movement, and hovering, which control navigation along the path (and might influence particle and audio behavior).
 
